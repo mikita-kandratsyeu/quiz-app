@@ -76,7 +76,7 @@ class Quiz extends Component {
         }
 
         window.clearTimeout(timeout);
-      }, 1000)
+      }, 500)
 
     } else {
       results[question.id] = 'error';
@@ -101,6 +101,10 @@ class Quiz extends Component {
       isFinished: false,
       results: {},
     })
+  }
+
+  componentDidMount() {
+    console.log(`Quiz ID = ${this.props.match.params.id}`)
   }
 
   render() {
