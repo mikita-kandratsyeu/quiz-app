@@ -2,13 +2,14 @@ import React, {Component} from "react";
 import classes from './Drawer.module.css';
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faInstagram, faFacebookSquare, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import {faInstagram, faFacebookSquare, faLinkedinIn, faGitlab} from '@fortawesome/free-brands-svg-icons';
 import {NavLink} from 'react-router-dom'
 
 const linkSocial = [
   {title: 'Instagram', link: 'https://www.instagram.com/nick_kondratyev/', icon: faInstagram},
   {title: 'Facebook', link: 'https://www.facebook.com/n1ck.kondratyev', icon: faFacebookSquare},
   {title: 'Linkedin', link: 'https://www.linkedin.com/in/nick-kondratyev/', icon: faLinkedinIn},
+  {title: 'GitLab', link: 'https://gitlab.com/projects-react/quiz-app-react', icon: faGitlab},
 ];
 
 const links = [

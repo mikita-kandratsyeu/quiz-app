@@ -15,3 +15,7 @@
 .quizWrapper {
   width: 600px;
 }
+
+.quizWrapper > h1 {
+  text-align: center;
+}
