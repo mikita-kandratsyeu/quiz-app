@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from './QuizCreator.module.css'
-import Button from "../../components/UI/Button/Button";
+import Button from '../../components/UI/Button/Button';
 import {createControl, validate, validateForm} from "../../from/formFraemwork";
 import Input from "../../components/UI/Input/Input";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
@@ -144,6 +144,10 @@ class QuizCreator extends Component {
     });
   }
 
+  componentDidMount() {
+    console.log(this.state.quiz);
+  }
+
   render() {
     const select = <Select
       label="Выберете правильный ответ"
@@ -176,7 +180,7 @@ class QuizCreator extends Component {
             <Button
               type={'success'}
               onClick={this.createQuizHandler}
-              disabled={this.state.quiz === 0}
+              disabled={this.state.quiz.length === 0}
             >
               Создать тест
             </Button>

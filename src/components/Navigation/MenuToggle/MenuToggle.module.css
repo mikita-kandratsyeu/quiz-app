@@ -19,7 +19,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .menuToggle {
+    transition: none;
+  }
   .menuToggle.open {
-    left: 85vw;
+    left: 90vw;
+    transition: none;
   }
 }
